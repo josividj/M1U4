@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 JS</title>
+</head>
+
+<body>
+    <script>
+        const listanumeros = [8, 4, 20, 7, 26, 2]
+        console.log(listanumeros[0]);
+        const cantidadele = (listanumeros.length);
+        document.write(`La cantidad de números es: ${cantidadele}<br>`);
+        let p1 = 0; let m1 = 0
+        document.write(`El primer número es: ${listanumeros[p1]}<br>`);
+        let p2 = 1; let m2 = 1
+        while (p2 < cantidadele){
+            if (listanumeros[p1] > listanumeros[p2]){
+                console.log('Es más grande el: ', listanumeros[p1], 'que el: ', listanumeros[p2])
+                m1 = p1; 
+            } else {
+                m2 = p2;    
+            }
+            p1++; p2++;
+        }
+        if (m1>m2){
+            document.write(`El número mayor es : ${listanumeros[m1]}<br>`)
+        } else {
+            document.write(`El número mayor es : ${listanumeros[m2]}<br>`)
+        }
+        
+    </script>
+</body>
+
+</html>
